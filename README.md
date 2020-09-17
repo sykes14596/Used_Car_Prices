@@ -12,6 +12,7 @@ A wide range of models were implemented and the effect of scaling data was inves
 * [Data Preprocessing](#data_preprocessing)
 * [Model Building](#model_building)
 * [Model Performance](#model_performance)
+* [Conclusions](#conclusions)
 
 ## Technologies
 
@@ -39,3 +40,41 @@ I analysed the correlation between the numerical variables and our target variab
 ![alt text](https://github.com/sykes14596/Used_Car_Prices/blob/master/Images/manufacturer_boxplot.png "Manufacturer Boxplot")
 ![alt text](https://github.com/sykes14596/Used_Car_Prices/blob/master/Images/numerical_variables_pairplot.png "Numerical Variables Pairplot")
 
+## Data Preprocessing
+
+The skewed variables were normalised by applying the logarithm to each value using the inbuilt Numpy function. The categorical variables were converted into numeric variables using dummy variables. Training and testing sets were created with a test size of 25%.
+
+## Model Building
+
+In total, eight different models were created. Five of these were implemented using the non-scaled dataset, with the remaining 3 being implemented on the scaled version. The scaling was completed using the Standard Scaler from within the Scikit-Learn library. The models implemented are shown below.
+
+* Linear Regression
+* Decision Tree Regressor
+* Random Forest Regressor
+* Support Vector Regression
+* MLP Regressor
+
+## Model Performance
+
+The models were analysed using 2 values. The first metric observed was the R2 score, which shows the amount of variance of the dependent variable explained by the model. The second metric utilised for analysis was the Root Mean Squared Error. Full results for each model implementation are shown below.
+
+#### Non-Scaled Data Models
+
+* Linear Regression: R2 Score = 90.6%, RMSE = £3008.
+* Decision Tree Regressor: R2 Score = 93.7%, RMSE = £2460
+* Random Forest Regressor: R2 Score = 96.4%, RMSE = £1870
+* Support Vector Regression: R2 Score = 87.4%, RMSE = £3498
+* MLP Regressor: R2 Score = 93.7%, RMSE = £2472
+
+#### Scaled Data Models
+
+* Decision Tree Regressor: R2 Score = 93.7%, RMSE = £2489
+* Random Forest Regressor: R2 Score = 96.4%, RMSE = £1859
+* Support Vector Regression: R2 Score = 94.3%, RMSE = £2354
+
+
+## Conclusions
+
+I was able to acheive relatively good model performance within this project. It can be see that scaling the data has differing effects on model performance based on the type of model implemented. Support vector regression showed a significant improvement as a result of using scaled data.
+
+Finally, I was able to further practice and develop my data science techniques and produce a thorough explanation of my methods within the Jupyter Notebook.
