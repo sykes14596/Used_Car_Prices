@@ -15,6 +15,9 @@ A wide range of models were implemented and the effect of scaling data was inves
 
 ## Technologies
 
+This project was completed using a Jupyter Notebook with the following packages installed.
+
+
 * Python: 3.7.7
 * Numpy: 1.19.1
 * Pandas: 1.1.0
@@ -23,3 +26,16 @@ A wide range of models were implemented and the effect of scaling data was inves
 * Matplotlib: 3.2.2
 * Tensorflow: 2.1.0
 * Keras: 2.3.1
+
+## Data Cleaning
+
+Before exploring and analysing the data, there were certain data points that did not seem to be correct. There were vehicles within the dataset which had a recorded engine size of 0.0, some which had supposedly been registered in the future as well as other strange occurences. These data points were identified and removed from the dataset.
+
+## Exploratory Data Analysis
+
+I analysed the correlation between the numerical variables and our target variable. As well as this, I investigated the distribution of each numerical variable and observed significant amounts of skewness. I investigated the relationships between the categorical variables and the dependent variable. Some of the highlights of the EDA can be seen below.
+
+![alt text](https://github.com/sykes14596/Used_Car_Prices/blob/master/Images/Correlation_Matrix.png "Correlation Matrix")
+![alt text](https://github.com/sykes14596/Used_Car_Prices/blob/master/Images/manufacturer_boxplot.png "Manufacturer Boxplot")
+![alt text](https://github.com/sykes14596/Used_Car_Prices/blob/master/Images/numerical_variables_pairplot.png "Numerical Variables Pairplot")
+
